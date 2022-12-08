@@ -13,4 +13,5 @@ if __name__ == "__main__":
             "Source": "https://github.com/ZeroIntensity/assertnever",
         },
         ext_modules=[Extension("an", ["an.c"])],
+        package_data={'an': ['py.typed', '*.pyi']},
     )
